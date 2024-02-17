@@ -11,6 +11,6 @@ class Category extends Model
 
     public function blogs()
     {
-        return $this->hasMany(Blog::class);
+        return $this->hasMany(Blog::class); // hasMany: Category Model => category_id foreign key
     }
 }
