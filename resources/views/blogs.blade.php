@@ -17,7 +17,9 @@
             </a>
         </h3>
         <p>{{ $blog->intro }}</p>
-        <small>{{ $blog->updated_at }}</small>
+        <p><small>Category - <a href="/categories/{{ $blog->category->slug }}">{{ $blog->category->name }}</a></small>
+        </p>
+        <p><a href=""><small>Uploaded - {{ $blog->updated_at ??= '3mins ago' }} </small></a></p>
     @endforeach
 
 </body>
