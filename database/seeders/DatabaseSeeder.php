@@ -16,8 +16,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)
-            ->has(Blog::factory()->count(5))
+        $categories = Category::factory(3)
+            ->sequence(
+                ['name' => 'frontend', 'slug' => 'frontend'],
+                ['name' => 'backend', 'slug' => 'backend'],
+                ['name' => 'database', 'slug' => 'database'],
+            )
             ->create();
+        $authors = User::factory(5)->create();
+        foreach ($categories as $category) {
+            foreach ($authors as $author)
+                Blog::factory(3)
+                    ->create([
+                        'category_id' => $category->id,
+                        'user_id' => $author->id
+                    ]);
+        }
     }
 }

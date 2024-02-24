@@ -22,7 +22,7 @@ class BlogFactory extends Factory
             'title' => fake()->unique()->word(),
             'slug' => fake()->unique()->slug(),
             'intro' => fake()->realText(),
-            'body' => fake()->paragraphs(5, true),
+            'body' => fake()->paragraphs(25, true),
             'category_id' => Category::factory(),
             'user_id' => User::factory()
         ];
