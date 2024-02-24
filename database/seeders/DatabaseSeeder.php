@@ -19,10 +19,5 @@ class DatabaseSeeder extends Seeder
         User::factory(10)
             ->has(Blog::factory()->count(5))
             ->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
