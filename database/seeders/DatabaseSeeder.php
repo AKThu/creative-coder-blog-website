@@ -32,5 +32,10 @@ class DatabaseSeeder extends Seeder
                         'user_id' => $author->id
                     ]);
         }
+
+        // \App\Models\User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
     }
 }
