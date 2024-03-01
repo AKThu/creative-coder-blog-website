@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Blog details</title>
-    <style>
-        body {
-            font-family: monospace;
-            background-color: #fafafa;
-            color: #121212;
-        }
-
-        .blog-body {
-            white-space: pre-wrap;
-        }
-    </style>
 </head>
 
 <body>
@@ -28,4 +17,13 @@
     </p>
 </body>
 
-</html>
+</html> --}}
+
+
+
+
+<x-layout>
+    <x-single-blog-section :blog="$blog" />
+    <x-subscribe />
+    <x-blogs-you-may-like :randomBlogs="$randomBlogs" />
+</x-layout>
