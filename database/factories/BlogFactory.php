@@ -21,7 +21,7 @@ class BlogFactory extends Factory
         return [
             'title' => fake()->unique()->word(),
             'slug' => fake()->unique()->slug(),
-            'intro' => fake()->realText(),
+            'intro' => fake()->realText(100),
             'body' => fake()->paragraphs(25, true),
             'category_id' => Category::factory(),
             'user_id' => User::factory()

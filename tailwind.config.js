@@ -20,6 +20,10 @@ export default {
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]
+      },
+      screens: {
+        'xs': '480px',
+        '3xl': '2000px'
       }
     },
   },
