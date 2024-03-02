@@ -1,7 +1,7 @@
 @props(['blog'])
 {{-- Container for one blog --}}
 <div
-     class="group flex flex-col justify-between bg-primary-background hover:bg-secondary-background ring-1 hover:ring ring-lightblue1 text-white hover:drop-shadow-md rounded-lg w-full sm:w-3/5 lg:w-2/5 2xl:w-1/4 min-h-fit py-6 px-6">
+     class="group flex flex-col justify-between bg-primary-background ring-1 hover:ring ring-lightblue1 text-white hover:drop-shadow-lg-blue rounded-lg w-full sm:w-3/5 lg:w-2/5 2xl:w-1/4 min-h-fit py-6 px-6">
 
     {{-- Container for Blog cover, Title & Intro --}}
     <div>

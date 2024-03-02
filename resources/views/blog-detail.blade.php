@@ -1,4 +1,5 @@
 <x-head />
+<x-nav />
 <div class="flex flex-row justify-center items-center">
     <div class="felx flex-col justify-center items-center min-h-screen p-6 w-full md:w-3/4 lg:w-4/5 2xl:w-[1200px]">
         {{-- Blog Title --}}
@@ -11,14 +12,14 @@
                 <p>Category -
                     <a
                        href="/?category={{ $blog->category->slug }}"
-                       class="bg-lightblue1 text-black2 px-2 py-1 rounded-full">
+                       class="bg-yellow-400 hover:bg-yello-500 text-gray-700 hover:text-white px-2 py-1 rounded-full">
                         {{ $blog->category->name }}
                     </a>
                 </p>
                 <p>Author -
                     <a
                        href="/?author={{ $blog->author->username }}"
-                       class="bg-lightblue1 text-black2 px-2 py-1 rounded-full">
+                       class="text-white px-2 py-1 rounded-full">
                         {{ $blog->author->name }}
                     </a>
                 </p>
@@ -28,7 +29,8 @@
         {{-- See all Blogs Button --}}
         <a href="/">
             <p
-               class="bg-lightblue1 hover:bg-blue1 hover:drop-shadow-md rounded-md p-2 text-center text-black2 hover:text-white font-bold select-none">
+               class="bg-primary-background hover:bg-lightblue1 ring-1 ring-lightblue1 text-white hover:text-gray-700 hover:drop-shadow-lg-blue rounded-md p-2 text-center font-bold select-none">
+
                 > See all Blogs <
                   </p>
         </a>

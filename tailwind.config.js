@@ -13,10 +13,10 @@ export default {
         'black': '#121212',
         'black2': '#424242',
         'blue1': '#374785',
-        'lightblue1': '#a8d0e6',
-        'primary-background': '#071122', //082032
-        'secondary-background': '#081133',
-        'tertiary-background': '#092233',
+        'lightblue1': '#a8d0e6', //a8d0e6
+        'primary-background': '#071122', //071122
+        'secondary-background': '#081133', //081133
+        'tertiary-background': '#310B0B',
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]
@@ -24,7 +24,10 @@ export default {
       screens: {
         'xs': '480px',
         '3xl': '2000px'
-      }
+      },
+      dropShadow: {
+        'lg-blue': '0 0 18px rgba(0, 0, 255, 0.25)',
+      },
     },
   },
   plugins: [],
