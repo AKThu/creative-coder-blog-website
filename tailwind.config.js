@@ -14,9 +14,9 @@ export default {
         'black2': '#424242',
         'blue1': '#374785',
         'lightblue1': '#a8d0e6',
-        'primary-background': '#082032',
-        'secondary-background': '#2C394B',
-        'tertiary-background': '#334756',
+        'primary-background': '#071122', //082032
+        'secondary-background': '#081133',
+        'tertiary-background': '#092233',
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]
