@@ -1,6 +1,14 @@
 <form action="/"
       class="w-3/4 sm:w-1/2 md:w-5/12 lg:w-2/5 2xl:w-[500px] flex flex-row justify-center items-center mb-5 p-1 rounded-md shadow-sm ring ring-lightblue1 bg-primary-background">
 
+    {{-- Other URL parameters --}}
+    @if (request('category'))
+        <input hidden name="category" value="{{ request('category') }}">
+    @endif
+    @if (request('author'))
+        <input hidden name="author" value="{{ request('author') }}">
+    @endif
+
     {{-- Input area --}}
     <input
            value="{{ request('search') }}"

@@ -23,12 +23,13 @@
          id="menu-authors"
          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
         <div class="py-1" role="none">
-            <a href="/" class="text-white hover:text-gray-700 block px-4 py-2 text-sm hover:bg-lightblue1"
+            <a href="/?{{ $otherUrlParameters }}"
+               class="text-white hover:text-gray-700 block px-4 py-2 text-sm hover:bg-lightblue1"
                role="menuitem"
                tabindex="-1"
                id="menu-item-0">All authors</a>
             @foreach ($authors as $author)
-                <a href="/?author={{ $author->username }}"
+                <a href="/?author={{ $author->username }} {{ $otherUrlParameters }}"
                    class="text-white hover:text-gray-700 block px-4 py-2 text-sm hover:bg-lightblue1" role="menuitem"
                    tabindex="-1"
                    id="menu-item-0">{{ $author->name }}</a>

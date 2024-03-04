@@ -1,5 +1,6 @@
 @props(['blog'])
 {{-- Container for one blog --}}
+
 <div
      class="group flex flex-col justify-between bg-primary-background ring-1 hover:ring ring-lightblue1 text-white hover:drop-shadow-lg-blue rounded-lg w-full sm:w-3/5 lg:w-2/5 xl:w-1/4 min-h-fit py-6 px-6">
 
@@ -13,7 +14,7 @@
 
         <div class="flex flex-row justify-between text-sm text-gray-500">
             <!-- Author -->
-            <a href="/?author={{ $blog->author->username }}"
+            <a href="/?author={{ $blog->author->username }}{{ request('category') ? '&category=' . request('category') : '' }}"
                class="hover:text-gray-300">
                 {{ $blog->author->name }}
             </a>

@@ -22,8 +22,12 @@ class DropdownAuthors extends Component
      */
     public function render(): View|Closure|string
     {
+        $category = request('category') ? "&category=" . request('category') : "";
+        $search = request('search') ? "&search=" . request('search') : "";
+
         return view('components.dropdown-authors', [
             'authors' => User::all(),
+            'otherUrlParameters' => $category . $search,
         ]);
     }
 }

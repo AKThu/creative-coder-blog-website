@@ -22,8 +22,12 @@ class DropdownCategories extends Component
      */
     public function render(): View|Closure|string
     {
+        $author = request('author') ? "&author=" . request('author') : "";
+        $search = request('search') ? "&search=" . request('search') : "";
+
         return view('components.dropdown-categories', [
             'categories' => Category::all(),
+            'otherUrlParameters' => $author . $search,
         ]);
     }
 }
