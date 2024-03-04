@@ -16,7 +16,7 @@ export default {
         'lightblue1': '#a8d0e6', //a8d0e6
         'primary-background': '#071122', //071122
         'secondary-background': '#081133', //081133
-        'tertiary-background': '#310B0B',
+        'tertiary-background': '#060612',
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"]

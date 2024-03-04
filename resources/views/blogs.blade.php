@@ -1,7 +1,5 @@
-<x-head />
+<x-layout>
 
-<x-nav />
+    <x-blogs-section :$blogs :$categories />
 
-<x-blogs-section :$blogs :$categories />
-
-<x-foot />
+</x-layout>

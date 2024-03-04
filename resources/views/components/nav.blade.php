@@ -1,4 +1,4 @@
-<nav class="bg-primary-background drop-shadow-lg-blue sticky top-0 z-50">
+<nav class="bg-tertiary-background drop-shadow-lg-blue sticky top-0 z-50">
     <div class="max-w-screen-xl flex flex-row items-center mx-auto p-4">
         <a href="/">
             <span class="text-2xl font-semibold whitespace-nowrap">My Website</span>
