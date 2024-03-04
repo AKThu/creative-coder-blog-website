@@ -14,7 +14,6 @@
             </svg>
         </button>
     </div>
-    {{-- @dd($authors) --}}
 
     {{-- Author list --}}
     {{-- Hidden on default. Visible on clicking Button --}}

@@ -11,7 +11,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::with('category', 'author')->filter()->latest()->get();
+        $blogs = Blog::with('category', 'author')->filter()->latest()->paginate(9);
         $categories = Category::all();
         $authors = User::all();
         return view('blogs', [

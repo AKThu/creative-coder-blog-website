@@ -14,10 +14,13 @@
 
     {{-- Blogs --}}
     <div
-         class="flex flex-row flex-wrap justify-center gap-10 w-full 3xl:w-[2000px] 2xl:w-[1500px] xl:w-screen lg:w-screen">
+         class="flex flex-row flex-wrap justify-center gap-10 mt-10 w-full 3xl:w-[2000px] 2xl:w-[1500px] xl:w-screen lg:w-screen">
         @foreach ($blogs as $blog)
             <x-blog-card :$blog />
         @endforeach
     </div>
 
+    <div class="mt-10">
+        {{ $blogs->links() }}
+    </div>
 </div>
