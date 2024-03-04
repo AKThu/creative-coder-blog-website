@@ -1,4 +1,3 @@
-@props(['categories'])
 {{-- Dropdown button --}}
 <div class="relative inline-block text-left mb-5">
 
@@ -6,7 +5,7 @@
     <div>
         <button type="button"
                 class="inline-flex justify-center gap-x-1.5 rounded-md bg-primary-background px-3 py-2 text-sm font-semibold text-white hover:text-gray-700 shadow-sm ring-1 ring-inset ring-lightblue1 hover:bg-lightblue1"
-                id="menu-button" aria-expanded="true" aria-haspopup="true">
+                id="menu-button-categories" aria-expanded="true" aria-haspopup="true">
             {{ request('category') ? $categories->firstWhere('slug', request('category'))->name : 'Categories' }}
             <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd"
@@ -20,7 +19,7 @@
     {{-- Hidden on default. Visible on clicking Button --}}
     <div class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-primary-background shadow-lg ring-1 ring-lightblue1 ring-opacity-25 focus:outline-none"
          style="visibility: hidden"
-         id="menu"
+         id="menu-categories"
          role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
         <div class="py-1" role="none">
             <a href="/" class="text-white hover:text-gray-700 block px-4 py-2 text-sm hover:bg-lightblue1"
