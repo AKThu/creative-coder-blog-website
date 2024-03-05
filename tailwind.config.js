@@ -27,6 +27,7 @@ export default {
       },
       dropShadow: {
         'lg-blue': '0 0 18px rgba(0, 0, 255, 0.25)',
+        'lg-white': '0 0 18px rgba(200, 200, 200, 0.25)',
       },
     },
   },

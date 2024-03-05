@@ -1,24 +1,126 @@
-<div class="min-h-screen w-auto flex flex-col items-center justify-center -translate-y-20">
-    <img
-         src="/assets/logo/logo_b&w.png"
-         alt="taka_tech_logo"
-         class="block h-auto w-[400px]">
-    <p class="w-3/5 text-center my-8">Welcome to Taka Tech, where
-        innovation meets code! Dive into a world
-        of programming
-        mastery,
-        cutting-edge
-        tools, and emerging technologies. Whether you're a seasoned developer or just starting your coding journey, our
-        blog is your ultimate resource hub.</p>
-    <svg class="absolute bottom-2 fill-white animate-bounce" height="25px" width="25px" version="1.1" id="Layer_1"
-         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         viewBox="0 0 511.787 511.787" xml:space="preserve">
-        <g>
-            <g>
-                <path d="M508.667,125.707c-4.16-4.16-10.88-4.16-15.04,0L255.76,363.573L18,125.707c-4.267-4.053-10.987-3.947-15.04,0.213
-   c-3.947,4.16-3.947,10.667,0,14.827L248.293,386.08c4.16,4.16,10.88,4.16,15.04,0l245.333-245.333
-   C512.827,136.693,512.827,129.867,508.667,125.707z" />
-            </g>
-        </g>
-    </svg>
+<div class="min-h-screen w-auto flex flex-col items-center justify-center"
+     id="home">
+    <div class="flex flex-row items-center justify-center w-full -translate-y-32">
+        <div>
+            {{-- <img
+                 src="/assets/logo/logo_b&w.png"
+                 alt="taka_tech_logo"
+                 class="block h-24 w-auto select-none"> --}}
+            <p class="text-center font-bold text-5xl select-none leading-snug">
+                <span class="text-white">Journey</span><br />
+                of<br />
+                <span class="text-lightblue1">Endless Possibilities</span>
+            </p>
+        </div>
+        <div class="h-fit w-auto scale-50 drop-shadow-lg-white">
+            <svg class="h-[440px] w-[930px]"> <!-- height="440" width="930" -->
+                <path d="M1046.81082,584.50538H405.97232a16.51868,16.51868,0,0,1-16.5-16.5V172.85157a12.10185,12.10185,0,0,1,12.08789-12.08838h649.4535a12.31111,12.31111,0,0,1,12.29711,12.29736V568.00538A16.51867,16.51867,0,0,1,1046.81082,584.50538Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-slate-900" />
+                <path d="M1026.091,563.67306H428.84627c-8.755,0-15.87757-6.66993-15.87757-14.86817v-344.105c0-6.08008,5.278-11.02685,11.76563-11.02685H1030.008c6.59521,0,11.96069,5.02832,11.96069,11.20849V548.80489C1041.9687,557.00313,1034.8459,563.67306,1026.091,563.67306Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-slate-700" />
+                <path d="M1064.08109,174.90772H389.24076v-8.40039a16.57376,16.57376,0,0,1,16.56-16.5498H1046.521a16.57368,16.57368,0,0,1,16.56006,16.5498Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-tertiary-background" />
+                <circle cx="282.64694" cy="12.5" r="4.28342" fill="#f33" />
+                <circle cx="298.90575" cy="12.5" r="4.28342" fill="#ff0" />
+                <circle cx="315.16455" cy="12.5" r="4.28342" fill="#3f3" />
+                <path d="M713.29967,268.912H596.49153a6.56614,6.56614,0,0,1,0-13.13228H713.29967a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)"
+                      class="fill-red-400 hover:fill-red-600" />
+                <path d="M858.44587,268.912H741.63774a6.56614,6.56614,0,0,1,0-13.13228H858.44587a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-yellow-400 hover:fill-yellow-600" />
+                <path d="M858.44587,293.79419H655.24119a6.56613,6.56613,0,1,1,0-13.13227H858.44587a6.56613,6.56613,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-green-400 hover:fill-green-600" />
+                <path d="M713.29967,243.68419H596.49153a6.56614,6.56614,0,0,1,0-13.13227H713.29967a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M777.5787,244.02978H744.40243a6.56614,6.56614,0,0,1,0-13.13228H777.5787a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-sky-400 hover:fill-sky-600" />
+                <path d="M629.66781,293.79419H596.49153a6.56614,6.56614,0,0,1,0-13.13227h33.17628a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M713.29967,501.912H596.49153a6.56614,6.56614,0,0,1,0-13.13228H713.29967a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-red-400 hover:fill-red-600" />
+                <path d="M858.44587,501.912H741.63774a6.56614,6.56614,0,0,1,0-13.13228H858.44587a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-green-400 hover:fill-green-600" />
+                <path d="M858.44587,526.79419H655.24119a6.56613,6.56613,0,1,1,0-13.13227H858.44587a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M713.29967,476.68419H596.49153a6.56613,6.56613,0,0,1,0-13.13227H713.29967a6.56613,6.56613,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-sky-400 hover:fill-sky-600" />
+                <path d="M777.5787,477.02978H744.40243a6.56614,6.56614,0,0,1,0-13.13228H777.5787a6.56614,6.56614,0,0,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-yellow-400 hover:fill-yellow-600" />
+                <path d="M629.66781,526.79419H596.49153a6.56613,6.56613,0,0,1,0-13.13227h33.17628a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-red-400 hover:fill-red-600" />
+                <path d="M682.793,431.41924a9.39692,9.39692,0,0,1-6.62352-2.7101l-43.90868-43.35929a9.1516,9.1516,0,0,1,0-13.02336l43.73124-43.18435a9.70171,9.70171,0,0,1,13.64354.043h0a9.689,9.689,0,0,1,.00019,13.68669l-32.49607,32.49664a5.41338,5.41338,0,0,0,0,7.64652l32.31978,32.32016a9.418,9.418,0,0,1-6.66648,16.08412Z"
+                      transform="translate(-136.68918 -149.95753)"
+                      class="fill-lightblue1 hover:fill-sky-400 animate-pulse" />
+                <path d="M752.75859,431.41924a9.418,9.418,0,0,1-6.66648-16.08412L778.41189,383.015a5.41338,5.41338,0,0,0,0-7.64652L745.91582,342.8718a9.67776,9.67776,0,0,1,.00019-13.68669h0a9.70169,9.70169,0,0,1,13.64353-.043l43.73124,43.18435a9.15157,9.15157,0,0,1,0,13.02336l-43.90867,43.35929A9.39891,9.39891,0,0,1,752.75859,431.41924Z"
+                      transform="translate(-136.68918 -149.95753)"
+                      class="fill-lightblue1 hover:fill-sky-400 animate-pulse" />
+            </svg>
+            <svg class="h-[440px] w-[930px] absolute top-40 left-80"> <!-- height="440" width="930" -->
+                <path d="M1046.81082,584.50538H405.97232a16.51868,16.51868,0,0,1-16.5-16.5V172.85157a12.10185,12.10185,0,0,1,12.08789-12.08838h649.4535a12.31111,12.31111,0,0,1,12.29711,12.29736V568.00538A16.51867,16.51867,0,0,1,1046.81082,584.50538Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-slate-900" />
+                <path d="M1026.091,563.67306H428.84627c-8.755,0-15.87757-6.66993-15.87757-14.86817v-344.105c0-6.08008,5.278-11.02685,11.76563-11.02685H1030.008c6.59521,0,11.96069,5.02832,11.96069,11.20849V548.80489C1041.9687,557.00313,1034.8459,563.67306,1026.091,563.67306Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-slate-700" />
+                <path d="M1064.08109,174.90772H389.24076v-8.40039a16.57376,16.57376,0,0,1,16.56-16.5498H1046.521a16.57368,16.57368,0,0,1,16.56006,16.5498Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-tertiary-background" />
+                <circle cx="282.64694" cy="12.5" r="4.28342" fill="#f33" />
+                <circle cx="298.90575" cy="12.5" r="4.28342" fill="#ff0" />
+                <circle cx="315.16455" cy="12.5" r="4.28342" fill="#3f3" />
+                <path d="M713.29967,268.912H596.49153a6.56614,6.56614,0,0,1,0-13.13228H713.29967a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-red-400 hover:fill-red-600" />
+                <path d="M858.44587,268.912H741.63774a6.56614,6.56614,0,0,1,0-13.13228H858.44587a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-yellow-400 hover:fill-yellow-600" />
+                <path d="M858.44587,293.79419H655.24119a6.56613,6.56613,0,1,1,0-13.13227H858.44587a6.56613,6.56613,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-green-400 hover:fill-green-600" />
+                <path d="M713.29967,243.68419H596.49153a6.56614,6.56614,0,0,1,0-13.13227H713.29967a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M777.5787,244.02978H744.40243a6.56614,6.56614,0,0,1,0-13.13228H777.5787a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-sky-400 hover:fill-sky-600" />
+                <path d="M629.66781,293.79419H596.49153a6.56614,6.56614,0,0,1,0-13.13227h33.17628a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M713.29967,501.912H596.49153a6.56614,6.56614,0,0,1,0-13.13228H713.29967a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-red-400 hover:fill-red-600" />
+                <path d="M858.44587,501.912H741.63774a6.56614,6.56614,0,0,1,0-13.13228H858.44587a6.56614,6.56614,0,1,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-green-400 hover:fill-green-600" />
+                <path d="M858.44587,526.79419H655.24119a6.56613,6.56613,0,1,1,0-13.13227H858.44587a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-gray-400 hover:fill-gray-600" />
+                <path d="M713.29967,476.68419H596.49153a6.56613,6.56613,0,0,1,0-13.13227H713.29967a6.56613,6.56613,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-sky-400 hover:fill-sky-600" />
+                <path d="M777.5787,477.02978H744.40243a6.56614,6.56614,0,0,1,0-13.13228H777.5787a6.56614,6.56614,0,0,1,0,13.13228Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-yellow-400 hover:fill-yellow-600" />
+                <path d="M629.66781,526.79419H596.49153a6.56613,6.56613,0,0,1,0-13.13227h33.17628a6.56614,6.56614,0,1,1,0,13.13227Z"
+                      transform="translate(-136.68918 -149.95753)" class="fill-red-400 hover:fill-red-600" />
+                <path d="M682.793,431.41924a9.39692,9.39692,0,0,1-6.62352-2.7101l-43.90868-43.35929a9.1516,9.1516,0,0,1,0-13.02336l43.73124-43.18435a9.70171,9.70171,0,0,1,13.64354.043h0a9.689,9.689,0,0,1,.00019,13.68669l-32.49607,32.49664a5.41338,5.41338,0,0,0,0,7.64652l32.31978,32.32016a9.418,9.418,0,0,1-6.66648,16.08412Z"
+                      transform="translate(-136.68918 -149.95753)"
+                      class="fill-lightblue1 hover:fill-sky-400 animate-pulse" />
+                <path d="M752.75859,431.41924a9.418,9.418,0,0,1-6.66648-16.08412L778.41189,383.015a5.41338,5.41338,0,0,0,0-7.64652L745.91582,342.8718a9.67776,9.67776,0,0,1,.00019-13.68669h0a9.70169,9.70169,0,0,1,13.64353-.043l43.73124,43.18435a9.15157,9.15157,0,0,1,0,13.02336l-43.90867,43.35929A9.39891,9.39891,0,0,1,752.75859,431.41924Z"
+                      transform="translate(-136.68918 -149.95753)"
+                      class="fill-lightblue1 hover:fill-sky-400 animate-pulse" />
+            </svg>
+        </div>
+    </div>
+    <div class="absolute bottom-2">
+        <div class="flex flex-col items-center">
+            <p class="w-3/5 text-center text-xl leading-relaxed">Welcome to Taka Tech, where
+                innovation meets code! Dive into a world
+                of programming
+                mastery,
+                cutting-edge
+                tools, and emerging technologies. Whether you're a seasoned developer or just starting your coding
+                journey,
+                our
+                blog is your ultimate resource hub.</p>
+            <svg class="fill-white animate-bounce mt-8" height="25px" width="25px" version="1.1"
+                 id="Layer_1"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 0 511.787 511.787" xml:space="preserve">
+                <g>
+                    <g>
+                        <path d="M508.667,125.707c-4.16-4.16-10.88-4.16-15.04,0L255.76,363.573L18,125.707c-4.267-4.053-10.987-3.947-15.04,0.213
+           c-3.947,4.16-3.947,10.667,0,14.827L248.293,386.08c4.16,4.16,10.88,4.16,15.04,0l245.333-245.333
+           C512.827,136.693,512.827,129.867,508.667,125.707z" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
 </div>

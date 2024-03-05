@@ -6,7 +6,7 @@
 
         <!-- Newsletter sign-up form -->
         <div class="mb-10">
-            <form action="">
+            <form action="" id="subscribe">
                 <div
                      class="gird-cols-1 grid items-center justify-center gap-4 md:grid-cols-3">
                     <div class="md:mb-6 md:ml-auto">
