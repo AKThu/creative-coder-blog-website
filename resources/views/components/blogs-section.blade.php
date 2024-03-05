@@ -14,7 +14,7 @@
 
     {{-- Blogs --}}
     <div
-         class="flex flex-row flex-wrap justify-center gap-10 mt-10 w-full 3xl:w-[2000px] 2xl:w-[1500px] xl:w-screen lg:w-screen">
+         class="flex flex-row flex-wrap justify-center gap-10 mt-10 w-full 3xl:w-[2000px] 2xl:w-[1400px] lg:w-[98vw]">
         @foreach ($blogs as $blog)
             <x-blog-card :$blog />
         @endforeach
