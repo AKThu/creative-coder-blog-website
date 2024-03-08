@@ -44,7 +44,7 @@
 
         <a href="/blogs/{{ $blog->slug }}"
            class="block w-full bg-primary-background hover:bg-lightblue1 text-white hover:text-gray-700 ring-1 ring-lightblue1 text-center py-1 rounded-lg">
-            Read more
+            Read More
         </a>
     </div>
 </div>

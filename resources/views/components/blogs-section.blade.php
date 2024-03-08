@@ -15,9 +15,11 @@
     {{-- Blogs --}}
     <div
          class="flex flex-row flex-wrap justify-center gap-10 mt-10 w-full 3xl:w-[2000px] 2xl:w-[1400px] lg:w-[98vw]">
-        @foreach ($blogs as $blog)
+        @forelse ($blogs as $blog)
             <x-blog-card :$blog />
-        @endforeach
+        @empty
+            <x-no-result />
+        @endforelse
     </div>
 
     <div class="mt-10">

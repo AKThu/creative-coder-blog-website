@@ -13,7 +13,7 @@ export default {
         'black': '#121212',
         'black2': '#424242',
         'blue1': '#374785',
-        'lightblue1': '#a8d0e6', //a8d0e6
+        'lightblue1': '#66A2E3', //a8d0e6
         'primary-background': '#071122', //071122
         'secondary-background': '#081133', //081133
         'tertiary-background': '#060612',
@@ -27,7 +27,7 @@ export default {
       },
       dropShadow: {
         'lg-blue': '0 0 18px rgba(0, 0, 255, 0.25)',
-        'lg-white': '0 0 18px rgba(200, 200, 200, 0.25)',
+        'lg-white': '0 0 18px rgba(150, 150, 150, 0.25)',
       },
     },
   },
