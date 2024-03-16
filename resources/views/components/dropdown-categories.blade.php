@@ -30,7 +30,7 @@
                tabindex="-1"
                id="menu-item-0">All categories</a>
             @foreach ($categories as $category)
-                <a href="/?category={{ $category->slug }}{{ $otherUrlParameters }}"
+                <a href="/?category={{ $category->slug }}{{ $otherUrlParameters }}#blogs"
                    class="text-white hover:text-primary-background block px-4 py-2 text-sm hover:bg-lightblue1"
                    role="menuitem"
                    tabindex="-1"

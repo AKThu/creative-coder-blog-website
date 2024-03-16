@@ -29,7 +29,7 @@
                tabindex="-1"
                id="menu-item-0">All authors</a>
             @foreach ($authors as $author)
-                <a href="/?author={{ $author->username }} {{ $otherUrlParameters }}"
+                <a href="/?author={{ $author->username }} {{ $otherUrlParameters }}#blogs"
                    class="text-white hover:text-primary-background block px-4 py-2 text-sm hover:bg-lightblue1"
                    role="menuitem"
                    tabindex="-1"
