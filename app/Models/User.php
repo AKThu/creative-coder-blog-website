@@ -43,6 +43,18 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
+    // mutator
+    // public function setPasswordAttribute($value)
+    // {
+    //     $this->attributes['password'] = bcrypt($value);
+    // }
+
+    // accessor
+    // public function getNameAttribute($value)
+    // {
+    //     return 'Mr.' . $value;
+    // }
+
     // a user has many blogs
     public function blogs()
     {

@@ -12,16 +12,12 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::with('category', 'author')->filter()->latest()->paginate(9);
-        $categories = Category::all();
-        $authors = User::all();
         return view('blogs', [
             'blogs' => $blogs,
-            'categories' => $categories,
-            'authors' => $authors,
         ]);
     }
 
-    public function find(Blog $blog)
+    public function show(Blog $blog)
     {
         return view('blog-detail', compact('blog'));
     }
