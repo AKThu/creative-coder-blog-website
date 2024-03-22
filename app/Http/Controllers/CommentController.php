@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
-use App\Models\Comment;
-use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
@@ -14,11 +12,10 @@ class CommentController extends Controller
             'body' => ['required']
         ]);
 
-        $comment = new Comment();
-        $comment->body = request('body');
-        $comment->blog_id = $blog->id;
-        $comment->user_id = auth()->id();
-        $comment->save();
+        $blog->comments()->create([
+            'body' => request('body'),
+            'user_id' => auth()->id()
+        ]);
 
         return back();
     }

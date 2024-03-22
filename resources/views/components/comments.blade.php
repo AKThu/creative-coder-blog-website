@@ -23,7 +23,7 @@
     <div class="relative flex flex-col mt-6 w-full ring-1 ring-lightblue1 text-white bg-primary-background shadow-md bg-clip-border rounded-xl my-2">
         <div class="p-6">
             <h5 class="block mb-2 text-xl antialiased font-bold leading-snug tracking-normal text-blue-gray-900">
-                {{$comment->user->name}}
+                {{$comment->user->name}} <span class="ml-3 text-xs font-light">{{$comment->created_at->diffForHumans()}}</span>
             </h5>
             <p class="block text-base antialiased font-light leading-relaxed text-inherit">
                 {{$comment->body}}

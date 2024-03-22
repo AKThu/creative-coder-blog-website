@@ -9,6 +9,8 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['body', 'user_id', 'blog-id'];
+
     // a comment belongsto a blog
     public function blog()
     {
