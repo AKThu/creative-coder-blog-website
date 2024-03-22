@@ -33,10 +33,12 @@
                 </form>
             @else
                 <a
+                    class="mx-2"
                     href="/login">
                     Login
                 </a>
                 <a
+                    class="mx-2"
                     href="/register">
                     Register
                 </a>

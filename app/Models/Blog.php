@@ -24,6 +24,12 @@ class Blog extends Model
         return $this->belongsTo(User::class, 'user_id'); // belongsTo: user method => user_id foreign key
     }
 
+    // a blog hasMany comments
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
     // filter method
     public function scopeFilter($query)
     {

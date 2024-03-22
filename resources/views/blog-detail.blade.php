@@ -1,6 +1,6 @@
 <x-layout>
-    <div class="flex flex-col items-center min-h-screen p-6">
 
+    <div class="flex flex-col items-center min-h-screen p-6">
         <div class="w-full md:w-4/5 lg:w-3/5 2xl:w-2/5">
             <!-- Blog cover -->
             <img src="/assets/images/blog-cover.jpg" alt="blog-cover" />
@@ -28,6 +28,7 @@
                     </p>
                 </div>
             </div>
+            <x-comments :$blog />
         </div>
     </div>
 
