@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="w-full max-w-sm mx-auto mt-5">
+    <div class="w-full max-w-sm mx-auto mt-5 min-h-screen">
         <h1 class="text-3xl text-center">Register</h1>
         <form
             class="bg-transparent shadow-lg rounded px-8 pt-6 pb-8 mb-4"

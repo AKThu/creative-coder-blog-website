@@ -1,8 +1,8 @@
 <x-layout>
 
-    @if (session()->has('success'))
+    {{-- @if (session()->has('success'))
         {{session('success')}}
-    @endif
+    @endif --}}
     <x-hero />
     <x-blogs-section :$blogs />
 
